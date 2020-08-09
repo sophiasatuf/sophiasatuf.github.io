@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>Meu Primeiro Site - Energia Solar</title>
+        <meta name = "author" content = "Sophia Satuf">
+        <meta name = "reply-to" content = "satufsophia@gmail.com">
+        <meta charset = UTF-8>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "content-language" content = "pt-br">
+        <!-- <meta name="description" content="">
+        <meta name = "keywords" content = "palavra, palavra chave, separadas por virgulas, minha pagina, pagina,"/> -->
+        <link rel = "stylesheet" href = "style.css">
+        <link href = "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel = "stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id = "logo">
+                <a href = "#capa">
+                    <img src = "img/logo_trans.png" alt = "Logo"/>
+                </a>
+            </div>
+            <nav id = "menu">
+                <!--<nav> secao com links de navegacao-->
+                <ul class = "margin">
+                    <!--<ul> para listas nao ordenadas e <ol> para listas ordenadas-->
+                    <li><a href = "#projeto">O Projeto</a></li>
+                    <li><a href ="#energia_solar">A Energia</a></li>
+                    <li><a href = "#pq">Por Quê?</a></li>
+                    <li><a href ="#eu">Quem Sou?</a></li>
+                    <li><a href = "#rodape">Contato</a></li>
+                </ul>
+            </nav>
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <img src = "img/menu.png" alt = "Menu">
+            </label>
+            <nav id = "menu2">
+                <a href = "#projeto" onclick="document.getElementById('check').checked=false">O Projeto</a>
+                <a href ="#energia_solar" onclick="document.getElementById('check').checked=false">A Energia</a>
+                <a href = "#pq" onclick="document.getElementById('check').checked=false">Por Quê?</a>
+                <a href ="#eu" onclick="document.getElementById('check').checked=false">Quem Sou?</a>
+                <a href = "#rodape" onclick="document.getElementById('check').checked=false">Contato</a>
+            </nav>
+        </header>
+        <figure id = "capa" class = "center">
+            <div class = "fundo">
+                <h1 class = "margin">Sol</h1>
+                <h2 class = "margin">
+                    "Três coisas não podem ser escondidas por muito tempo: o sol, a lua e a verdade."
+                </h2>
+                <p id = "buda" class = "margin">- Buda</p>
+                <a id = "ods_link" href = "https://nacoesunidas.org/pos2015/ods7/" target = "blank">ods 7</a>
+                <!--target = "blank" abre o link numa guia separada-->
+            </div>
+        </figure>
+        <section id = "projeto" class = "section_tipo">
+            <h3>O Projeto</h3>
+            <hr>
+            <div class = "coluna dois">
+                <p class = "justify">
+                    Você sabia que a energia solar representa apenas 1,6% da matriz elétrica brasileira? E o sol é uma fonte inesgotável de energia luminosa, são 1000 Joules de energia para cada metro quadrado do nosso planeta. Todavia, um estudo de 2018 mostrou que um bilhão de pessoas (13% da população mundial) ainda vive sem eletricidade.</p>
+                <p class = "justify">
+                    A fim de alcançar um mundo mais sustentável e digno, em setembro de 2015, as Nações Unidas definiram os Objetivos de Desenvolvimento Sustentável (ODS), agregando novos desafios e uma nova agenda à proposta anteriormente pelos ODM (Objetivos de desenvolvimento do milênio).
+                </p>
+                <p class = "justify">
+                    Por isso, uma das metas - ODS de número 7 - é garantir o acesso universal à energia de forma confiável, acessiva e, de preferência, sustentável até o ano de 2030. Então, eu escolhi esse tema para o meu site pois, além de envolver uma área de meu interesse, nós vivemos em um mundo onde o acesso à eletricidade é imprescindível.
+                </p>
+            </div>
+            <div class = "coluna dois">
+                <img src = "/img/grafico.PNG" alt = "Matriz energética brasileira">
+                <a id = "legenda" href = "http://www.absolar.org.br/infografico-absolar.html" target = "blank">Fonte: ANEEL/ABSOLAR, 2020</a>
+            </div>
+        </section>
+        <section id = "energia_solar" class = "section_tipo section_cor">
+            <h3>Energia Solar</h3>
+            <hr>
+            <div class = "coluna dois">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/8RjGHmlOu58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe> linka com o video do youtube, mapa, etc-->
+            </div>
+            <div class = "coluna dois">
+                <h4>Como funciona um painel solar?</h4>
+                <p class = "justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+                <p class = "justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+                <p class = "justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+        </section>
+        <section id = "pq" class = "section_tipo">
+            <h3>Por Quê?</h3>
+            <hr>
+            <div class = "coluna quatro center">
+                <div class = "icone">
+                    <img src = "img/sustainability.png" rel = "Sustentabilidade"/>
+                </div>
+                <h4>Energia limpa e Renovável</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+            <div class = "coluna quatro center">
+                <div class = "icone">
+                    <img src = "img/money.png" rel = "Dinheiro"/>
+                </div>
+                <h4 class = "padding">Custo Benefício</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+            <div class = "coluna quatro center">
+                <div class = "icone">
+                    <img src = "img/solar-panel.png" rel = "Energia"/>
+                </div>
+                <h4>Simples Implementação</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+            <div class = "coluna quatro center">
+                <div class = "icone">
+                    <img src = "img/cactus.png" rel = "Cactus"/>
+                </div>
+                <h4 class = "padding">Versatilidade</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+        </section>
+        <section id = "eu" class = "section_tipo section_cor">
+            <div class = "coluna dois center">
+                <h3>Quem Sou?</h3>
+                <hr>
+                <p class = "center">
+                    Sophia Satuf
+                </p>
+                <p class = "justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+                <p class = "justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                </p>
+            </div>
+            <div class = "coluna dois center">
+                <img src = "img/foto_perfil.jpeg" rel = "Sophia"/>
+            </div>
+        </section>
+        <footer id = "rodape" class = "section_tipo">
+            <div class = "coluna dois">
+                <h4 class = "margin">Meu primeiro site</h4>
+                <p class = "justify">
+                    Projeto desenvolvido durante o curso Meu primeiro site, promovido pela Junior Achievement Brasil e Microsoft.
+                </p>
+            </div>
+            <div class = "coluna dois">
+                <div class = "rodape_bottom">
+                    <div class = "contato">
+                        <img src = "img/email.png" rel = "Email" class = "icone"/>
+                        <address>satufsophia@gmail.com</address><br>
+                    </div>
+                    <div class = "contato">
+                        <img src = "img/phone.png" rel = "Telefone" class = "icone"/>
+                        <address>31 996812609</address><br>
+                    </div>
+                    <div class = "contato">
+                        <img src = "img/instagram.png" rel = "Instagram" class = "icone"/>
+                        <address>@sophiasatuf</address>
+                    </div>
+                </div>
+                <!--<div class = "contato">
+                    <img src = "img/email.png" rel = "Email" class = "icone"/><br>
+                    <img src = "img/phone.png" rel = "Telefone" class = "icone"/><br>
+                    <img src = "img/instagram.png" rel = "Instagram" class = "icone"/>
+                </div>
+                <div class = "contato">
+                    <address>satufsophia@gmail.com</address><br>
+                    <address>31 996812609</address><br>
+                    <address>@sophiasatuf</address>
+                </div>-->
+            </div>
+        </footer>
+    </body>
+</html>

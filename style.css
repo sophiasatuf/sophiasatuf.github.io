@@ -1,0 +1,378 @@
+:root{
+    font-size: 62.5%; /*controle das medidas rem 1rem = 10px*/
+}
+/*todo o codigo*/
+html, body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+p{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+hr{
+    width: 3rem;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.margin{
+    margin: 0px;
+}
+/*cabecalho*/
+header{
+    background-color: #0b162a;
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo img{
+    width: 13rem;
+    height: 5.1rem;
+    float: left;
+    position: absolute;
+}
+/*menu*/
+#menu{
+    float: right;
+    margin-right: 3%;
+}
+ul{
+    list-style: none;
+}
+header li{
+    float: left;
+    padding: 2rem 1rem;
+}
+header li a{
+    color: #deca54;
+}
+header li:hover{
+    background-color: #1f2c3d;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    transition: all .4s linear;
+    
+}
+/*responsividade*/
+header label{
+    visibility: hidden;
+}
+header #check{
+    display: none;
+}
+#menu2{
+    visibility: hidden;
+}
+/*capa*/
+#capa{
+    margin: 0 auto;
+    color: #00070d;
+}
+#capa .fundo{
+    background: url("img/fundo_mps.jpg");
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover; /*faz a imagem ocupar toda a largura da página*/
+}
+h1{
+    /*titulo*/
+    padding-top: 14%;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+h2{
+    /*subtitulo*/
+    padding-left: 36.3%; padding-right: 36.3%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#buda{
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0.5rem 36.7% 1rem 0rem;
+}
+#ods_link{
+    color: #97933a;
+    text-transform: uppercase;
+    border: 0.1rem #97933a solid;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+}
+#ods_link:hover{
+    background-color: #97923a44;
+}
+/*sections*/
+h3{
+    /*titulo das secoes*/
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 2% 0rem 2rem 0rem;
+    text-align: center;
+}
+h4{
+    /*section 1: titulo do texto
+      section 3: titulo dos icones*/
+    font-size: 2.5rem;
+}
+.section_tipo{
+    padding: 2%;
+    float: left;
+    color: #00070d;
+}
+.section_cor{
+    background-color: #f7f7f7;
+}
+.coluna{
+    float: left;
+    padding: 0rem 5%;
+    position: relative;
+}
+.dois{
+    width: 40%
+}
+.tres{
+    width: 29%
+}
+.quatro{
+    width: 15%
+}
+.justify{
+    /*sections 1, 2, 4*/
+    text-align: justify;
+}
+.center{
+    /*h3, section 3*/
+    text-align: center;
+}
+/*section 1*/
+#projeto{
+    border-left: 2.9vw #26464b solid;
+}
+#projeto img{
+    width: 100%;
+}
+#legenda{
+    color: #00070d;
+    font-size: 1rem;
+    text-align: right;
+}
+#legenda:hover{
+    color: #97933a;
+}
+/*section 2*/
+#energia_solar{
+    border-left: 2.9vw #1f2c3d solid;
+}
+#energia_solar iframe{
+    margin-top: 6.2vh;
+}
+/*section 3*/
+#pq{
+    border-left: 2.9vw #dec954 solid;
+}
+#pq .icone{
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto;
+}
+#pq .icone img{
+    margin: 1.5rem;
+}
+#pq .icone:hover{
+    background-color: #deca54;
+    transition: 0.5s;
+}
+#pq .padding{
+    padding-bottom: 4.3vh;
+}
+/*section 4*/
+#eu{
+    border-left: 2.9vw #97933a solid;
+}
+#eu img{
+    margin-top: 8vh;
+    width: 65%;
+}
+/*rodape*/
+#rodape{
+    /*foi dado uma identidade para o link no menu funcionar*/
+    width: 100%;
+    background-color: #1f2c3d;
+    color: #dec954;
+    box-sizing: border-box;
+}
+.contato{
+    display: flex;
+    align-items: center; /* alinha os itens no eixo y da div */
+    /*float: left;
+    position: relative;
+    width: 45%;
+    text-align: right;*/
+}
+#rodape .icone{
+    padding: 0.5rem 2rem 0.5rem 0rem;
+}
+#rodape address{
+    font-size: 1.5rem;
+}
+/*
+    responsividade:
+    @media capta o tamanho da tela, quando a tela
+    estiver menor que 768px, ela vai operar o que
+    estiver dentro dela
+*/
+@media all and (max-width:1024px){
+    :root{
+        font-size: 60%;
+    }
+    /*cabecalho*/
+    #menu ul{
+        visibility: hidden;
+    }
+    #logo{
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    #logo img{
+        transform: translateX(-50%);
+    }
+    /*menu2*/
+    header label{
+        visibility: visible;
+        position: absolute;
+        margin: 1.5%;
+        text-align: right;
+        cursor: pointer;
+        z-index: 11;
+        transition: all .2s linear;
+    }
+    #menu2{
+        visibility: visible;
+        box-sizing: border-box;
+        background-color: #0b162a;
+        margin: 5.9rem 0rem;
+        height: 45vh;
+        width: 45vw;
+        left: -45vw;
+        position: absolute;
+        transition: all .3s linear;
+    }
+    #menu2 a{
+        display: block;
+        text-decoration: none;
+        padding: 7% 5%;
+        color: #deca54;
+        background-color: #1f2c3d;
+        border-bottom: 0.1rem #0b162a solid;
+        opacity: 0;
+        margin-top: 5vh;
+        transition: all .4s linear;
+    }
+    #check:checked ~ #menu2{
+        transform: translateX(45vw);
+    }
+    #check:checked ~ #menu2 a{
+        opacity: 1;
+        margin-top: 0;
+    }
+    #menu2 a:hover{
+        background-color: #26464b;
+        padding: 7% 5% 7% 10%;
+    }
+    /*capa*/
+    #capa .fundo{
+        height: 85%;
+    }
+    h1{
+        padding-top: 21%;
+    }
+    h2{
+        padding-left: 20%; padding-right: 20%;
+    }
+    #buda{
+        padding: 5px 21% 1rem 0rem;
+    }
+    #ods_link{
+        color: #5f6d43;
+        border: 0.1rem #5f6d43 solid;
+    }
+    #ods_link:hover{
+        background-color: #5f6d4344;
+    }
+    /*sections*/
+    .section_tipo{
+        padding: 5rem 0 0 0;
+    }
+    .coluna, .dois, .tres, .quatro{
+        display: block; /*divisoes passam a ocupar toda a linha*/
+        padding: 0;
+        width: 80%;
+        margin: 1rem auto;
+        float: none;
+    }
+    .justify{
+        text-align: left;
+    }
+    /*section 1*/
+    #projeto h4{
+        text-align: center;
+    }
+    /*section 2*/
+    #energia_solar h4{
+        text-align: center;
+    }
+    /*section 3*/
+    #pq .padding{
+        padding: 0;
+    }
+    /*section 4*/
+    /*rodape*/
+    #rodape{
+        text-align: left;
+    }
+    #rodape h4{
+        padding-left: 15%;
+    }
+    #rodape p{
+        padding: 0 15%;
+    }
+    .rodape_bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contato{
+        padding: 2% 3.5%;
+    }
+    #rodape .icone{
+        padding: 0.5rem 1rem 0.5rem 0rem;
+    }
+}
+@media all and (max-width:767px){
+    header label{
+        margin: 4%;
+    }
+    #ods_link{
+        color: #26464b;
+        border: 0.1rem #26464b solid;
+    }
+    #ods_link:hover{
+        background-color: #26464b44;
+    }
+    .rodape_bottom{
+        display: initial;
+    }
+    .contato{
+        float: left;
+    }
+}
+/*
+    # para chamar ids
+    . para chamar classes
+    clear: both; cancela o efeito das floats
+*/
