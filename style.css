@@ -40,7 +40,7 @@ header{
     float: right;
     margin-right: 3%;
 }
-ul{
+#menu ul{
     list-style: none;
 }
 header li{
@@ -117,6 +117,10 @@ h4{
       section 3: titulo dos icones*/
     font-size: 2.5rem;
 }
+strong{
+    /*entrevista*/
+    font-size: 1.6rem;
+}
 .section_tipo{
     padding: 2%;
     float: left;
@@ -140,12 +144,22 @@ h4{
     width: 15%
 }
 .justify{
-    /*sections 1, 2, 4*/
+    /*sections 1, 2, 5*/
     text-align: justify;
 }
 .center{
     /*h3, section 3*/
     text-align: center;
+}
+.legenda{
+    /*sections 1, 2*/
+    color: #00070d;
+    font-size: 1rem;
+    text-align: right;
+}
+.legenda:hover{
+    /*sections 1, 2*/
+    color: #97933a;
 }
 /*section 1*/
 #projeto{
@@ -154,21 +168,22 @@ h4{
 #projeto img{
     width: 100%;
 }
-#legenda{
-    color: #00070d;
-    font-size: 1rem;
-    text-align: right;
-}
-#legenda:hover{
-    color: #97933a;
-}
 /*section 2*/
-#energia_solar{
+.energia_solar_tipo{
     border-left: 2.9vw #1f2c3d solid;
 }
-#energia_solar iframe{
-    margin-top: 6.2vh;
+.energia_solar_tipo img{
+    border-radius: 2rem;
+    margin-top: 5.6vh;
+    width: 100%;
 }
+.energia_solar_tipo iframe{
+   margin-top: 6.2vh;
+}
+/*.energia_solar_tipo li{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+}*/
 /*section 3*/
 #pq{
     border-left: 2.9vw #dec954 solid;
@@ -190,6 +205,13 @@ h4{
     padding-bottom: 4.3vh;
 }
 /*section 4*/
+#entrevista{
+    border-left: 2.9vw #5f6d43 solid;
+}
+#entrevista ol{
+    font-size: 1.6rem;
+}
+/*section 5*/
 #eu{
     border-left: 2.9vw #97933a solid;
 }
@@ -331,6 +353,7 @@ h4{
         padding: 0;
     }
     /*section 4*/
+    /*section 5*/
     /*rodape*/
     #rodape{
         text-align: left;
