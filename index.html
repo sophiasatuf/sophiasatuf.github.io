@@ -25,6 +25,7 @@
                     <li><a href = "#projeto">O Projeto</a></li>
                     <li><a href ="#energia_solar">A Energia</a></li>
                     <li><a href = "#pq">Por Quê?</a></li>
+                    <li><a href = "#entrevista">Caso Real</a></li>
                     <li><a href ="#eu">Quem Sou?</a></li>
                     <li><a href = "#rodape">Contato</a></li>
                 </ul>
@@ -34,11 +35,12 @@
                 <img src = "img/menu.png" alt = "Menu">
             </label>
             <nav id = "menu2">
-                <a href = "#projeto" onclick="document.getElementById('check').checked=false">O Projeto</a>
-                <a href ="#energia_solar" onclick="document.getElementById('check').checked=false">A Energia</a>
-                <a href = "#pq" onclick="document.getElementById('check').checked=false">Por Quê?</a>
-                <a href ="#eu" onclick="document.getElementById('check').checked=false">Quem Sou?</a>
-                <a href = "#rodape" onclick="document.getElementById('check').checked=false">Contato</a>
+                <a href = "#projeto" onclick = "document.getElementById('check').checked = false">O Projeto</a>
+                <a href ="#energia_solar" onclick = "document.getElementById('check').checked = false">A Energia</a>
+                <a href = "#pq" onclick = "document.getElementById('check').checked = false">Por Quê?</a>
+                <a href = "#entrevista" onclick = "document.getElementById('check').checked = false">Caso Real</a>
+                <a href ="#eu" onclick = "document.getElementById('check').checked = false">Quem Sou?</a>
+                <a href = "#rodape" onclick = "document.getElementById('check').checked = false">Contato</a>
             </nav>
         </header>
         <figure id = "capa" class = "center">
@@ -59,20 +61,37 @@
                 <p class = "justify">
                     Você sabia que a energia solar representa apenas 1,6% da matriz elétrica brasileira? E o sol é uma fonte inesgotável de energia luminosa, são 1000 Joules de energia para cada metro quadrado do nosso planeta. Todavia, um estudo de 2018 mostrou que um bilhão de pessoas (13% da população mundial) ainda vive sem eletricidade.</p>
                 <p class = "justify">
-                    A fim de alcançar um mundo mais sustentável e digno, em setembro de 2015, as Nações Unidas definiram os Objetivos de Desenvolvimento Sustentável (ODS), agregando novos desafios e uma nova agenda à proposta anteriormente pelos ODM (Objetivos de desenvolvimento do milênio).
+                    A fim de alcançar um mundo mais sustentável e digno, em setembro de 2015, as Nações Unidas definiram os Objetivos de Desenvolvimento Sustentável (ODS), agregando novos desafios e uma nova agenda à anteriormente proposta pelos ODM (Objetivos de Desenvolvimento do Milênio).
                 </p>
                 <p class = "justify">
-                    Por isso, uma das metas - ODS de número 7 - é garantir o acesso universal à energia de forma confiável, acessiva e, de preferência, sustentável até o ano de 2030. Então, eu escolhi esse tema para o meu site pois, além de envolver uma área de meu interesse, nós vivemos em um mundo onde o acesso à eletricidade é imprescindível.
+                    Por isso, uma das metas - ODS de número 7 - é garantir o acesso universal à energia de forma confiável, acessível e, de preferência, sustentável até o ano de 2030. Escolhi esse tema para o meu site pois, além de envolver uma área de meu interesse, nós vivemos em um mundo onde o acesso à eletricidade é imprescindível.
                 </p>
             </div>
             <div class = "coluna dois">
                 <img src = "/img/grafico.PNG" alt = "Matriz energética brasileira">
-                <a id = "legenda" href = "http://www.absolar.org.br/infografico-absolar.html" target = "blank">Fonte: ANEEL/ABSOLAR, 2020</a>
+                <a class = "legenda" href = "http://www.absolar.org.br/infografico-absolar.html" target = "blank">Fonte: ANEEL/ABSOLAR, 2020</a>
             </div>
         </section>
-        <section id = "energia_solar" class = "section_tipo section_cor">
-            <h3>Energia Solar</h3>
+        <section id = "energia_solar" class = "energia_solar_tipo section_tipo section_cor">
+            <h3>A Energia</h3>
             <hr>
+            <div class = "coluna dois">
+                <h4>O que é a energia solar?</h4>
+                <p class = "justify">
+                    O sol é considerado uma fonte inesgotável de energia luminosa. A energia solar, proveniente de sua luz e calor, pode ser aproveitada utilizando diferentes tecnologias, seja através de painéis fotovoltaicos, aquecimento solar e energia heliotérmica.
+                </p>
+                <p class = "justify">
+                    É uma forma de energia alternativa, limpa e sustentável, ou seja, não agride o meio ambiente e é encontrada em abundância na natureza. Além de todas essas qualidades, a energia solar é uma forma de energia primária, que não precisa ser transformada ou convertida para a utilização.
+                </p>
+                <p class = "justify">
+                    Isto a torna muito atrativa do ponto de vista econômico, pois requer um sistema simples para a produção de energia, pouca manutenção e fácil instalação. A seguir, você vai conhecer um pouco mais sobre a energia fotovoltaica, a mais utilizada para gerar eletricidade dentre as citadas.
+                </p>
+            </div>
+            <div class = "coluna dois">
+                <img src = "/img/pexels-pixabay-371917.jpg" alt = "Sistema Fotovoltaico">
+            </div>
+        </section>
+        <section class = "energia_solar_tipo section_tipo">
             <div class = "coluna dois">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/8RjGHmlOu58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- <iframe> linka com o video do youtube, mapa, etc-->
@@ -80,17 +99,17 @@
             <div class = "coluna dois">
                 <h4>Como funciona um painel solar?</h4>
                 <p class = "justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                    Energia solar fotovoltaica faz a conversão da radiação solar em energia elétrica, que é feita através de células solares. Uma célula produz em média 0.5V, então são necessárias várias células fotovoltaicas interligadas, formando um painel solar.
                 </p>
                 <p class = "justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                    Células fotovoltaicas são compostas por uma junção pn de um material semicondutor, normalmente o silício. Por ser um semicondutor, a luz solar é a energia necessária para excitar os elétrons da célula, transportando-os pelo material até serem captados pelo campo elétrico, formado pela diferença de potencial existente entre a região de tipo p e a região de tipo n. Dessa forma, gera-se eletricidade.
                 </p>
                 <p class = "justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                    Os painéis instalados no telhado, captam a luz solar e transformam em energia elétrica na forma de corrente contínua. Estes painéis são ligados a um inversor que converte para corrente alternada, podendo assim ligar o sistema ao circuito elétrico (quadro de luz) em sua residência ou empresa.
                 </p>
             </div>
         </section>
-        <section id = "pq" class = "section_tipo">
+        <section id = "pq" class = "section_tipo section_cor">
             <h3>Por Quê?</h3>
             <hr>
             <div class = "coluna quatro center">
@@ -128,6 +147,79 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
                 </p>
+            </div>
+        </section>
+        <section id = "entrevista" class = "section_tipo">
+            <h3>Um pouco de realidade</h3>
+            <hr>
+            <div class = "coluna" coluna>
+                <p><span>
+                    <strong>Sophia Satuf: </strong>
+                    Essa entrevista tem como objetivo estudar um estabelecimento real que utiliza painéis fotovoltaicos como fonte de energia e apresentar dados sobre este tema. Ela será publicada no site de tema ODS 7 (Energia limpa e acessível), desenvolvido para o curso “Meu Primeiro Site”, Junior Achievement Brasil e Microsoft.
+                </span></p>
+                <strong>
+                    SS: A energia solar representa apenas 1,6% da matriz elétrica brasileira, então por que vocês escolheram utilizar essa forma de energia para a pousada?
+                </strong><br>
+                <p><span>
+                    <strong>Ildeu Marques: </strong>
+                    Na pousada Cachoeira da Serra temos diversas iniciativas de uso de energia renováveis, voltadas para sustentabilidade a saber:
+                </span></p>
+                <ol>
+                    <li>Bombeamento através do uso de energia hidráulica;</li>
+                    <li>Aquecimento (65grausC) e preaquecimento (40grausC) de água de banho por energia solar;</li>
+                    <li>Aquecimento da água de piscina (30grausC) através de energia solar, com apoio de bomba de calor, que também utiliza o calor do ar;</li>
+                </ol>
+                <p>Para complementar, foi instalada um UFV em função de norma da ANEEL, REN482 que permite compensação via créditos de geração em outros períodos.</p>
+                <strong>SS: Vocês optaram por um sistema off-grid ou on-grid? Quais os motivos/critérios para essa escolha?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    A opção On grid foi escolhida em função da Ren482 da ANEEL que permite armazenar a energia excedente e entrega em outro horário. Estamos analisando trabalhar com baterias de ion lítio, para otimizar o sistema e permitir expansão.
+                </span></p>
+                <strong>SS: Quantos painéis solares foram instalados, e qual a produção média de energia em kWh?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Foram instalados 120 painéis solares, com produção média mensal de 5000kWh.
+                </span></p>
+                <strong>SS: Quais estabelecimentos da pousada são alimentados por essa forma de energia?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Toda a pousada é alimentada pelo sistema, sendo que a conta de energia da distribuidora CEMIG foi praticamente zerada.
+                </span></p>
+                <strong>SS: Qual a frequência de manutenção?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Apenas limpeza das placas uma vez por ano e capina sob as placas (gramas, mato, etc) duas vezes por ano.
+                </span></p>
+                <strong>SS: Há quanto tempo a usina está em funcionamento?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    A UFV está em operação por 20 meses.
+                </span></p>
+                <strong>SS: Quanto foi o investimento financeiro nessa forma de energia?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Foram investidos R$188.000,00 nesta UFV.
+                </span></p>
+                <strong>SS: O custo da instalação é compensado?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Foi realizado um financiamento sendo que  valor da conta e energia elétrica é superior ao valor mensal do financiamento, ou seja, a UFV foi implantada sem custos, ou seja, sobra em potencial, dinheiro todo mês.
+                </span></p>
+                <strong>SS: Houve alguma melhoria na elétrica da pousada após a instalação dos painéis fotovoltaicos?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    A qualidade da energia ficou pior, pois durante o dia, a tensão sobe em função da energia gerada (fluxo reverso) e por ser final de linha, o efeito é maximizado. Relato que já houve uma falha em uma geladeira no momento de baixa carga interna e geração máxima, dessa forma, estimo ter sido este o motivo.
+                </span></p>
+                <strong>SS: Existe algum arrependimento quanto à escolha de converter à utilização de uma fonte de energia sustentável?</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    Enquanto a legislação Ren482 não for alterada, é um excelente negócio, sendo que existe uma distorção desta legislação, pois se eu não pagar pela operação do sistema, os demais setores da sociedade vão pagar. Estas benesses não se mantêm por muito tempo, na minha ótica.
+                </span></p>
+                <strong>SS: Por fim, fique à vontade para acrescentar mais alguma informação sobre a sua experiência utilizando energia solar, limpa e renovável!</strong><br>
+                <p><span>
+                    <strong>IM:</strong>
+                    A Pousada  Cachoeira da Serra é suficiente em água e energia elétrica, sendo que pretendo duplicar o sistema de energia fotovoltaico em breve, pois pretendo substituir a energia de cocção (GLP) por energia elétrica, utilizando fogões de alta eficiência, fogões de indução.
+                </span></p>
             </div>
         </section>
         <section id = "eu" class = "section_tipo section_cor">
