@@ -6,8 +6,7 @@
         <meta charset = UTF-8>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <meta http-equiv = "content-language" content = "pt-br">
-        <!-- <meta name="description" content="">
-        <meta name = "keywords" content = "palavra, palavra chave, separadas por virgulas, minha pagina, pagina,"/> -->
+        <meta name = "description" content = "A energia solar, proveniente da luz e calor do sol, pode ser aproveitada utilizando diferentes tecnologias, seja através de painéis fotovoltaicos, aquecimento solar e energia heliotérmica.">
         <link rel = "stylesheet" href = "style.css">
         <link href = "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel = "stylesheet">
     </head>
@@ -25,9 +24,9 @@
                     <li><a href = "#projeto">O Projeto</a></li>
                     <li><a href ="#energia_solar">A Energia</a></li>
                     <li><a href = "#pq">Por Quê?</a></li>
-                    <li><a href = "#entrevista">Caso Real</a></li>
-                    <li><a href ="#eu">Quem Sou?</a></li>
-                    <li><a href = "#rodape">Contato</a></li>
+                    <li><a href = "#entrevista">Case</a></li>
+                    <li><a href = "#mais">Mais</a></li>
+                    <li><a href ="#eu">Contato</a></li>
                 </ul>
             </nav>
             <input type = "checkbox" id = "check">
@@ -38,16 +37,16 @@
                 <a href = "#projeto" onclick = "document.getElementById('check').checked = false">O Projeto</a>
                 <a href ="#energia_solar" onclick = "document.getElementById('check').checked = false">A Energia</a>
                 <a href = "#pq" onclick = "document.getElementById('check').checked = false">Por Quê?</a>
-                <a href = "#entrevista" onclick = "document.getElementById('check').checked = false">Caso Real</a>
-                <a href ="#eu" onclick = "document.getElementById('check').checked = false">Quem Sou?</a>
-                <a href = "#rodape" onclick = "document.getElementById('check').checked = false">Contato</a>
+                <a href = "#entrevista" onclick = "document.getElementById('check').checked = false">Case</a>
+                <a href = "#mais" onclick = "document.getElementById('check').checked = false">Mais</a>
+                <a href ="#eu" onclick = "document.getElementById('check').checked = false">Contato</a>
             </nav>
         </header>
         <figure id = "capa" class = "center">
             <div class = "fundo">
                 <h1 class = "margin">Sol</h1>
                 <h2 class = "margin">
-                    "Três coisas não podem ser escondidas por muito tempo: o sol, a lua e a verdade."
+                    "Três coisas não podem ser escondidas por muito tempo:<br>o sol, a lua e a verdade."
                 </h2>
                 <p id = "buda" class = "margin">- Buda</p>
                 <a id = "ods_link" href = "https://nacoesunidas.org/pos2015/ods7/" target = "blank">ods 7</a>
@@ -67,7 +66,7 @@
                     Por isso, uma das metas - ODS de número 7 - é garantir o acesso universal à energia de forma confiável, acessível e, de preferência, sustentável até o ano de 2030. Escolhi esse tema para o meu site pois, além de envolver uma área de meu interesse, nós vivemos em um mundo onde o acesso à eletricidade é imprescindível.
                 </p>
             </div>
-            <div class = "coluna dois">
+            <div id = "grafico" class = "coluna dois">
                 <img src = "/img/grafico.PNG" alt = "Matriz energética brasileira">
                 <a class = "legenda" href = "http://www.absolar.org.br/infografico-absolar.html" target = "blank">Fonte: ANEEL/ABSOLAR, 2020</a>
             </div>
@@ -88,12 +87,12 @@
                 </p>
             </div>
             <div class = "coluna dois">
-                <img src = "/img/pexels-pixabay-371917.jpg" alt = "Sistema Fotovoltaico">
+                <img src = "/img/pexels-pixabay-371917.jpg" alt = "Usina Fotovoltaica">
             </div>
         </section>
         <section class = "energia_solar_tipo section_tipo">
             <div class = "coluna dois">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/8RjGHmlOu58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width = "100%" height = "315" src = "https://www.youtube.com/embed/8RjGHmlOu58" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- <iframe> linka com o video do youtube, mapa, etc-->
             </div>
             <div class = "coluna dois">
@@ -102,7 +101,7 @@
                     Energia solar fotovoltaica faz a conversão da radiação solar em energia elétrica, que é feita através de células solares. Uma célula produz em média 0.5V, então são necessárias várias células fotovoltaicas interligadas, formando um painel solar.
                 </p>
                 <p class = "justify">
-                    Células fotovoltaicas são compostas por uma junção pn de um material semicondutor, normalmente o silício. Por ser um semicondutor, a luz solar é a energia necessária para excitar os elétrons da célula, transportando-os pelo material até serem captados pelo campo elétrico, formado pela diferença de potencial existente entre a região de tipo p e a região de tipo n. Dessa forma, gera-se eletricidade.
+                    Células fotovoltaicas são compostas por uma junção pn de um material semicondutor, normalmente o silício. Por ser um semicondutor, a luz solar é a energia que o silício necessita para excitar os elétrons da célula, transportando-os até serem captados pelo campo elétrico formado pela diferença de potencial existente entre a região de tipo p e a região de tipo n. Dessa forma, gera-se eletricidade.
                 </p>
                 <p class = "justify">
                     Os painéis instalados no telhado, captam a luz solar e transformam em energia elétrica na forma de corrente contínua. Estes painéis são ligados a um inversor que converte para corrente alternada, podendo assim ligar o sistema ao circuito elétrico (quadro de luz) em sua residência ou empresa.
@@ -116,9 +115,15 @@
                 <div class = "icone">
                     <img src = "img/sustainability.png" rel = "Sustentabilidade"/>
                 </div>
-                <h4>Energia limpa e Renovável</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                <h4>Energia limpa e Sustentável</h4>
+                <p class = "p_top">
+                    A energia solar não polui ou agride o meio ambiente, o que é essencial no contexto atual.
+                </p>
+                <p class = "p_top p_bottom">
+                    Ela é sustentável pois utiliza uma fonte inesgotável do ponto de vista humano, o sol, estando sempre em equilíbrio com a natureza.
+                </p>
+                <p class = "p_bottom">
+                    Outra qualidade é a ausência de ruídos, então além de estar contribuindo para um mundo melhor, você não vai precisar se preocupar com vizinhos.
                 </p>
             </div>
             <div class = "coluna quatro center">
@@ -126,8 +131,12 @@
                     <img src = "img/money.png" rel = "Dinheiro"/>
                 </div>
                 <h4 class = "padding">Custo Benefício</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                <p class = "p_top">
+                    O custo inicial de instalação é logo compensado, afinal, os painéis solares requerem manutenção mínima e possuem uma vida útil de 25 anos. Em média um sistema fotovoltaico se paga em até 6 anos após sua instalação.
+                </p>
+                <p class = "p_bottom">
+                    Além disso, toda a energia gerada não utilizada pelo cliente é devolvida a ele. 
+                    <a id = "Aneel" href = "https://luzsolar.com.br/resolucao-normativa-482-aneel/" target = "blank">(Resolução Normativa da Aneel nº 482)</a>
                 </p>
             </div>
             <div class = "coluna quatro center">
@@ -135,8 +144,11 @@
                     <img src = "img/solar-panel.png" rel = "Energia"/>
                 </div>
                 <h4>Simples Implementação</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                <p class = "p_top">
+                    A instalação do sistema é rápida e simples, e deve ser feita por mão de obra qualificada. Os painéis solares e o inversor são fixados no madeiramento e alvenaria, estruturas já existentes nos imóveis.
+                </p>
+                <p class = "p_bottom">
+                    Uma vez instalados e averiguados todos os componentes, o inversor já pode ser configurado e ligado, então o sistema começa a gerar energia.
                 </p>
             </div>
             <div class = "coluna quatro center">
@@ -144,15 +156,32 @@
                     <img src = "img/cactus.png" rel = "Cactus"/>
                 </div>
                 <h4 class = "padding">Versatilidade</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                <p class = "p_top">
+                    A energia solar é muito versátil e pode ser utilizada em qualquer lugar, inclusive áreas isoladas. A simplicidade e eficiência a tornam uma ótima opção para a implementação em regiões completamente remotas e sem rede elétrica.
+                </p>
+                <p class = "p_bottom">
+                    Por estar localizado próximo a linha do Equador, o Brasil é ainda mais propício para sua utilização.
                 </p>
             </div>
         </section>
-        <section id = "entrevista" class = "section_tipo">
-            <h3>Um pouco de realidade</h3>
+        <section id = "entrevista" class = "section_tipo entrevista_tipo">
+            <h3>Um Pouco de Realidade</h3>
             <hr>
-            <div class = "coluna" coluna>
+            <div class = "coluna dois">
+                <p class = "justify">
+                    A <a href = "https://www.pousadacachoeiradaserra.com.br/" target = "blank">Pousada Cachoeira</a> da Serra é um ótimo exemplo de estabelecimento sustentável. Com uma área de 580 hectares de natureza exuberante, ela se localiza no Morro da Pedreira a 75 km de Belo Horizonte, no circuito turístico do Parque Nacional da Serra do Cipó, município de Jaboticatubas.
+                </p>
+                <p class = "justify">
+                    Há um ano e 8 meses foi implementada uma usina solar fotovoltaica em seu complexo. O advogado, engenheiro e Mestre em Ciências pela UFMG, Ildeu Marques - gestor da pousada -, concedeu a seguinte entrevista:
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.4749646306545!2d-43.651531685141585!3d-19.521211986834125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5dcc5aba2bcfd%3A0xea0177381f6aed9e!2sPousada%20Cachoeira%20da%20Serra!5e0!3m2!1sen!2sbr!4v1597107733972!5m2!1sen!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class = "coluna dois">
+                <img id = "pousada" src = "/img/pousada.jpg" alt = "Pousada Cachoeira da Serra">
+            </div>
+        </section>
+        <section class = "section_tipo entrevista_tipo">
+            <div class = "coluna dois" coluna>
                 <p><span>
                     <strong>Sophia Satuf: </strong>
                     Essa entrevista tem como objetivo estudar um estabelecimento real que utiliza painéis fotovoltaicos como fonte de energia e apresentar dados sobre este tema. Ela será publicada no site de tema ODS 7 (Energia limpa e acessível), desenvolvido para o curso “Meu Primeiro Site”, Junior Achievement Brasil e Microsoft.
@@ -173,7 +202,7 @@
                 <strong>SS: Vocês optaram por um sistema off-grid ou on-grid? Quais os motivos/critérios para essa escolha?</strong><br>
                 <p><span>
                     <strong>IM:</strong>
-                    A opção On grid foi escolhida em função da Ren482 da ANEEL que permite armazenar a energia excedente e entrega em outro horário. Estamos analisando trabalhar com baterias de ion lítio, para otimizar o sistema e permitir expansão.
+                    A opção On grid foi escolhida em função da Ren482 da ANEEL que permite armazenar a energia excedente e entregar em outro horário. Estamos analisando trabalhar com baterias de ion lítio, para otimizar o sistema e permitir expansão.
                 </span></p>
                 <strong>SS: Quantos painéis solares foram instalados, e qual a produção média de energia em kWh?</strong><br>
                 <p><span>
@@ -221,8 +250,61 @@
                     A Pousada  Cachoeira da Serra é suficiente em água e energia elétrica, sendo que pretendo duplicar o sistema de energia fotovoltaico em breve, pois pretendo substituir a energia de cocção (GLP) por energia elétrica, utilizando fogões de alta eficiência, fogões de indução.
                 </span></p>
             </div>
+            <div class = "coluna dois center">
+                <img class = "print" src = "/img/diario-4.jpeg" alt = "Perfil de geração diário">
+                <p class = "print_descricao">Perfil de geração diário referente à data 04/08</p>
+                <img class = "print" src = "/img/diario-7.jpeg" alt = "Perfil de geração diário">
+                <p class = "print_descricao">Perfil de geração diário referente à data 07/08</p>
+                <img class = "print" src = "/img/diario-9.jpeg" alt = "Perfil de geração diário">
+                <p class = "print_descricao">Perfil de geração diário referente à data 09/08</p>
+                <img class = "print" src = "/img/mensal.jpeg" alt = "Perfil de geração mensal">
+                <p class = "print_descricao">Perfil de geração mensal de 2020</p>
+            </div>
         </section>
-        <section id = "eu" class = "section_tipo section_cor">
+        <section id = "mais" class = "section_tipo section_cor">
+            <h3>Para Saber Mais</h3>
+            <hr>
+            <div class = "coluna">
+                <p class = "justify">
+                    Você deve estar se perguntando: Mas que esforços o Brasil está fazendo para contribuir com a ODS 7 e alcançar um mundo mais sustentável?
+                </p>
+                <p class = "justify">
+                    Dentre as iniciativas, foi criado em 2003 o programa <a href = "https://www.politize.com.br/luz-para-todos-programa-social/" target = "blank">Luz para Todos que</a>, com planos nacionais e estaduais e parcerias com a iniciativa privada, tem como objetivo levar energia elétrica às regiões isoladas ou casas que ainda não a contemplam. A maior parte dessas localidades está localizada na região Norte, são comunidades ribeirinhas, aldeias indígenas ou do meio rural.
+                </p>
+                <p class = "justify">
+                    De acordo com os dados do último censo demográfico do IBGE, a população considerada sem acesso à energia ultrapassava dois milhões de brasileiros. Até 2011 não foram feitos grandes avanços, porém, foi a partir dessa data, até 2017, que foi feito um plano de ação para atingir as famílias que ainda não tinham esse recurso, e a energia elétrica chegou a quase 800 mil pessoas no Brasil (IEMA, 2019).
+                </p>
+                <h4 class = center>Vídeos e Sites para Conhecer</h4>
+            </div>
+            <div class = "coluna dois">
+                
+            </div>
+            <div class = "coluna dois">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kAtYm10YjCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "coluna dois">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zthJCIsMWac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "coluna tres contato">
+                <a href = "https://www.gogla.org/" target = "blank">
+                    <img src = "/img/gogla.png" alt = "Gogla">
+                </a>
+                <p>Associação global para a indústria de energia solar off-grid.</p>
+            </div>
+            <div class = "coluna tres contato">
+                <a href = "https://www.litrodeluz.com/" target = "blank">
+                    <img src = "/img/litro_de_luz.png" alt = "Litro de Luz">
+                </a>
+                <p>Levamos luz até moradores de comunidades locais.</p>
+            </div>
+            <div class = "coluna tres contato">
+                <a href = "https://www.wwf.org.br/" target = "blank">
+                    <img src = "/img/wwf.png" alt = "WWF">
+                </a>
+                <p>Promovemos um futuro onde sociedade e natureza vivem em harmonia.</p>
+            </div>
+        </section>
+        <section id = "eu" class = "section_tipo">
             <div class = "coluna dois center">
                 <h3>Quem Sou?</h3>
                 <hr>
@@ -230,10 +312,16 @@
                     Sophia Satuf
                 </p>
                 <p class = "justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                    Oi, eu sou a Sophia, tenho 17 anos e fiz o meu primeiro site! Atualmente curso Automação Industrial e o ensino médio pelo Coltec - UFMG e sempre tive um fascínio pela área de tecnologias sustentáveis. 
                 </p>
                 <p class = "justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure, hic, quidem voluptatem vitae illo sapiente ipsam reiciendis amet est id saepe, dolore aliquam eius. Molestias, laboriosam voluptate! Placeat, consequuntur?
+                    Nasci e cresci em Belo Horizonte - MG e, como toda boa belo horizontina, no meu tempo livre eu gosto de passear pelo <a href = "http://circuitoliberdade.mg.gov.br/pt-br/" target = "blank">Circuito Liberdade</a>, caminhar pelos parques nos arredores de BH e ler romances ou livros de ficção.
+                </p>
+                <p class = "justify">
+                    Para mim, o curso Meu Primeiro Site foi uma experiência de muita aprendizagem e prazer. Só tenho a agradecer à <a href = "https://www.jabrasil.org.br/" target = "blank">JA Brasil</a> por disponibilizar um material de qualidade e professores muito competentes, que me ajudaram a descobrir um campo pelo qual tenho tanto interesse.
+                </p>
+                <p class = "justify">
+                    No projeto, procurei trazer conteúdo, esclarecimento e crítica sobre um tema atual de muita importância. Espero que tenham gostado e obrigada pela atenção!
                 </p>
             </div>
             <div class = "coluna dois center">
@@ -244,7 +332,7 @@
             <div class = "coluna dois">
                 <h4 class = "margin">Meu primeiro site</h4>
                 <p class = "justify">
-                    Projeto desenvolvido durante o curso Meu primeiro site, promovido pela Junior Achievement Brasil e Microsoft.
+                    Projeto desenvolvido durante o curso Meu primeiro site, promovido pela <a href = "https://www.jabrasil.org.br/" target = "blank">Junior Achievement Brasil</a> e <a href = "https://www.microsoft.com/pt-br" target = "blank">Microsoft</a>.
                 </p>
             </div>
             <div class = "coluna dois">
@@ -262,16 +350,6 @@
                         <address>@sophiasatuf</address>
                     </div>
                 </div>
-                <!--<div class = "contato">
-                    <img src = "img/email.png" rel = "Email" class = "icone"/><br>
-                    <img src = "img/phone.png" rel = "Telefone" class = "icone"/><br>
-                    <img src = "img/instagram.png" rel = "Instagram" class = "icone"/>
-                </div>
-                <div class = "contato">
-                    <address>satufsophia@gmail.com</address><br>
-                    <address>31 996812609</address><br>
-                    <address>@sophiasatuf</address>
-                </div>-->
             </div>
         </footer>
     </body>
