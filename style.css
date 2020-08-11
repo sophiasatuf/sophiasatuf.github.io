@@ -113,8 +113,9 @@ h3{
     text-align: center;
 }
 h4{
-    /*section 1: titulo do texto
-      section 3: titulo dos icones*/
+    /*sections 2, 3: titulo do texto
+      section 3: titulo dos icones
+      section 5: saiba mais*/
     font-size: 2.5rem;
 }
 strong{
@@ -138,13 +139,14 @@ strong{
     width: 40%
 }
 .tres{
-    width: 29%
+    padding-top: 5%;
+    width: 23%
 }
 .quatro{
     width: 15%
 }
 .justify{
-    /*sections 1, 2, 5*/
+    /*sections 1, 2, 3, 5, 6*/
     text-align: justify;
 }
 .center{
@@ -152,14 +154,18 @@ strong{
     text-align: center;
 }
 .legenda{
-    /*sections 1, 2*/
+    /*section 1*/
     color: #00070d;
     font-size: 1rem;
-    text-align: right;
 }
 .legenda:hover{
     /*sections 1, 2*/
     color: #97933a;
+}
+.contato{
+    /*section 5, rodape*/
+    display: flex;
+    align-items: center; /* alinha os itens no eixo y da div */
 }
 /*section 1*/
 #projeto{
@@ -173,17 +179,13 @@ strong{
     border-left: 2.9vw #1f2c3d solid;
 }
 .energia_solar_tipo img{
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     margin-top: 5.6vh;
     width: 100%;
 }
 .energia_solar_tipo iframe{
    margin-top: 6.2vh;
 }
-/*.energia_solar_tipo li{
-    font-size: 1.6rem;
-    margin-top: 1.6rem;
-}*/
 /*section 3*/
 #pq{
     border-left: 2.9vw #dec954 solid;
@@ -204,19 +206,71 @@ strong{
 #pq .padding{
     padding-bottom: 4.3vh;
 }
+.p_top{
+    margin-bottom: 0;
+}
+.p_bottom{
+    margin-top: 0;
+}
+#pq a{
+    font-size: 1.6rem;
+    color: #97933a;
+}
 /*section 4*/
-#entrevista{
+.entrevista_tipo{
     border-left: 2.9vw #5f6d43 solid;
 }
-#entrevista ol{
+.entrevista_tipo a{
+    font-size: 1.6rem;
+    color: #5f6d43;
+}
+.entrevista_tipo #pousada{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.entrevista_tipo iframe{
+    width: 100%;
+    height: 23%;
+}
+.entrevista_tipo strong{
+    color: #5f6d43;
+}
+.entrevista_tipo ol{
     font-size: 1.6rem;
 }
+.print{
+    padding: 5% 5% 0 5%;
+    width: 40%;
+}
+.print_descricao{
+    font-size: 1.2rem;
+}
 /*section 5*/
-#eu{
+#mais{
     border-left: 2.9vw #97933a solid;
 }
+#mais a{
+    color: #97933a;
+}
+#mais iframe{
+    width: 100%;
+}
+#mais img{
+    width: 10rem;
+    height: 10rem;
+}
+#mais .contato p {
+    padding-left: 3rem;
+}
+/*section 6*/
+#eu{
+    border-left: 2.9vw #26464b solid;
+}
+#eu a{
+    color: #5f6d43;
+}
 #eu img{
-    margin-top: 8vh;
+    margin-top: 12vh;
     width: 65%;
 }
 /*rodape*/
@@ -227,13 +281,12 @@ strong{
     color: #dec954;
     box-sizing: border-box;
 }
-.contato{
-    display: flex;
-    align-items: center; /* alinha os itens no eixo y da div */
-    /*float: left;
-    position: relative;
-    width: 45%;
-    text-align: right;*/
+#rodape a{
+    font-size: 1.6rem;
+    color: #deca54;
+}
+#rodape a:hover{
+    color: #97933a;
 }
 #rodape .icone{
     padding: 0.5rem 2rem 0.5rem 0rem;
@@ -317,7 +370,7 @@ strong{
         padding-left: 20%; padding-right: 20%;
     }
     #buda{
-        padding: 5px 21% 1rem 0rem;
+        padding: 5px 22% 1rem 0rem;
     }
     #ods_link{
         color: #5f6d43;
@@ -327,6 +380,9 @@ strong{
         background-color: #5f6d4344;
     }
     /*sections*/
+    h4{
+        text-align: center;
+    }
     .section_tipo{
         padding: 5rem 0 0 0;
     }
@@ -341,24 +397,46 @@ strong{
         text-align: left;
     }
     /*section 1*/
-    #projeto h4{
-        text-align: center;
-    }
     /*section 2*/
-    #energia_solar h4{
-        text-align: center;
+    .energia_solar_tipo img{
+        margin-top: 2rem;
+    }
+    .energia_solar_tipo iframe{
+        margin-top: 0;
     }
     /*section 3*/
     #pq .padding{
         padding: 0;
     }
+    .p_top,
+    .p_bottom{
+        text-align: center;
+        padding: 0 8%;
+    }
     /*section 4*/
+    .entrevista_tipo #pousada{
+        margin-top: 5rem;
+    }
+    .print{
+        width: 60%;
+    }
+    .print_descricao{
+        font-size: 1.6rem;
+    }
     /*section 5*/
+    #mais .contato{
+        display: flex;
+    }
+    /*section 6*/
+    #eu img{
+        margin-top: 1.6rem;
+    }
     /*rodape*/
     #rodape{
         text-align: left;
     }
     #rodape h4{
+        text-align: left;
         padding-left: 15%;
     }
     #rodape p{
@@ -369,7 +447,7 @@ strong{
         align-items: center;
         justify-content: center;
     }
-    .contato{
+    #rodape .contato{
         padding: 2% 3.5%;
     }
     #rodape .icone{
@@ -380,12 +458,23 @@ strong{
     header label{
         margin: 4%;
     }
+    #buda{
+        padding: 5px 21% 1rem 0rem;
+    }
     #ods_link{
         color: #26464b;
         border: 0.1rem #26464b solid;
     }
     #ods_link:hover{
         background-color: #26464b44;
+    }
+    .print_descricao{
+        font-size: 1.2rem;
+    }
+    #mais .contato{
+        padding: 0 5%;
+        display: block;
+        text-align: center;
     }
     .rodape_bottom{
         display: initial;
